@@ -26,3 +26,8 @@
 2025-06-02T01:25:10.374Z - Bad Request, information saknas - 400 - Missing data
 2025-06-02T01:25:14.722Z - Bad Request, information saknas - 400 - Missing data
 2025-06-02T01:25:44.293Z - 400 - 400 - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+2025-06-02T01:55:17.474Z - Internal Server Error - 500 - index is not defined
+2025-06-02T01:55:25.547Z - Internal Server Error - 500 - index is not defined
+2025-06-02T01:55:26.762Z - Internal Server Error - 500 - index is not defined
+2025-06-02T01:55:28.032Z - Internal Server Error - 500 - index is not defined
+2025-06-02T01:55:29.246Z - Internal Server Error - 500 - index is not defined

@@ -1,20 +1,20 @@
 import fs from 'fs';
 import Block from './Block.mjs';
+import { v4 as uuidv4 } from 'uuid';
 
-export class Blockchain {
+ export default class Blockchain {
   constructor() {
     this.chain = this.loadBlockchain() || [Block.genesis()];
     this.difficulty = 1;
   }
   addBlock({ data }) {
-    if (!this.chain || this.chain.length === 0) {
-      this.chain = [Block.genesis()];
-    }
+    const id = uuidv4();
     const addedBlock = Block.mineBlock({
+      id,
       previousBlock: this.chain[this.chain.length - 1],
       data,
-      difficulty: this.difficulty,
     });
+
     this.chain.push(addedBlock);
     this.saveBlockchain();
   }
@@ -22,9 +22,8 @@ export class Blockchain {
   getAllBlocks() {
     return this.chain;
   }
-
-  getBlockByIndex(index) {
-    return this.chain.find((b) => b.index === index);
+  getBlockById(id) {
+    return this.chain.find((block) => block.id === id);
   }
 
   getLatestBlock() {
@@ -54,3 +53,4 @@ export class Blockchain {
     }
   }
 }
+

@@ -3,8 +3,8 @@ import { createHash } from '../../utilities/hash.mjs';
 import { MINE_RATE } from '../../utilities/config.mjs';
 
 export default class Block {
-  constructor({ index,timestamp, hash, lastHash, data, nonce, difficulty }) {
-    this.index = index;
+  constructor({ id, timestamp, hash, lastHash, data, nonce, difficulty }) {
+    this.id = id;
     this.timestamp = timestamp;
     this.hash = hash;
     this.lastHash = lastHash;
@@ -17,7 +17,7 @@ export default class Block {
     return new this(GENESIS_BLOCK);
   }
 
-   static mineBlock({ previousBlock, data }) {
+  static mineBlock({ id, previousBlock, data }) {
     let timestamp, hash;
     const lastHash = previousBlock.hash;
     let { difficulty } = previousBlock;
@@ -30,10 +30,10 @@ export default class Block {
         block: previousBlock,
         timestamp,
       });
-      hash = createHash( timestamp, lastHash, data, nonce, difficulty);
+      hash = createHash(timestamp, lastHash, data, nonce, difficulty);
     } while (hash.substring(0, difficulty) !== '0'.repeat(difficulty));
 
-    return new this({ timestamp, hash, lastHash, data, nonce, difficulty });
+    return new this({ id, timestamp, hash, lastHash, data, nonce, difficulty });
   }
 
   static adjustDifficultyLevel({ block, timestamp }) {
@@ -48,5 +48,4 @@ export default class Block {
 
     return difficulty + 1;
   }
-
 }

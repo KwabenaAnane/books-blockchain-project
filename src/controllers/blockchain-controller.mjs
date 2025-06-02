@@ -1,5 +1,8 @@
 import AppError from '../models/appError.mjs'
-import  blockchain  from '../models/blockchain/blockchain-instance.mjs'
+// import  blockchain  from '../models/blockchain/blockchain-instance.mjs'
+import Blockchain from '../models/blockchain/Blockchain.mjs'
+
+const blockchain = new Blockchain()
 
 export const addBlock = (req, res, next) => {
   try {
@@ -21,7 +24,7 @@ export const getAllBlocks = (req, res, next) => {
 }
 export const getBlock = (req, res, next) => {
   try {
-    const block = blockchain.getBlockByIndex(req.params.index)
+    const block = blockchain.getBlockById(req.params.id)
     if (!block) throw new AppError('Block not found', 404)
     res.json(block)
   } catch (err) {

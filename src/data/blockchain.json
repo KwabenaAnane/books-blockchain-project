@@ -1,41 +1,86 @@
 [
   {
-    "timestamp": 1748827609874,
-    "hash": "0422cc92942b2eea47a1a24b000416d6c225e585416e35bf724e5cf148254b35",
-    "lastHash": "a875813c7ff528ae3aeabe74220177cc2a705630172aebd57c76cf87be9a95c1",
+    "id": "84c8a4d2-dcf3-4308-8091-a41d3249429e",
+    "timestamp": 1748859928543,
+    "hash": "d1ddf8add5b8ba11637de3993bd4f8c1ab1c30a498d420961502e63eb0dc1937",
+    "lastHash": "006b2b5d42ee9a75deb60c9eb807ede4548c6e81fa3105e5c9223ec5d37bdb3d",
     "data": {
-      "id": "s005",
-      "name": "Lina Pettersson",
-      "course": "Token Economics",
-      "grade": "A+"
-    },
-    "nonce": 30,
-    "difficulty": 1
-  },
-  {
-    "timestamp": 1748827625358,
-    "hash": "77974b8c6cf3cd3842feabd845e43faf67b65283b820d82fd70963d338c0ce59",
-    "lastHash": "0422cc92942b2eea47a1a24b000416d6c225e585416e35bf724e5cf148254b35",
-    "data": {
-      "id": "s005",
-      "name": "Lina Pettersson",
-      "course": "Token Economics",
-      "grade": "A+"
+      "id": "s010",
+      "name": "John Sally",
+      "course": "Web3 Architecture",
+      "grade": "A-"
     },
     "nonce": 1,
     "difficulty": 0
   },
   {
-    "timestamp": 1748827714728,
-    "hash": "03fe67b6f4cbb033336c41db352a022430e9f5eb4ca415e157d4355faa0c6087",
-    "lastHash": "77974b8c6cf3cd3842feabd845e43faf67b65283b820d82fd70963d338c0ce59",
+    "id": "ec61b89e-51cc-44c2-b70c-3914d2384cda",
+    "timestamp": 1748860016477,
+    "hash": "098c77a0e0f562206304f1d22d88f0006133e7dee6ede1fa910011cee4ab9cc0",
+    "lastHash": "d1ddf8add5b8ba11637de3993bd4f8c1ab1c30a498d420961502e63eb0dc1937",
+    "data": {
+      "id": "s005",
+      "name": "Lina Pettersson",
+      "course": "Token Economics",
+      "grade": "A+"
+    },
+    "nonce": 20,
+    "difficulty": 1
+  },
+  {
+    "id": "0ab71cff-4478-4393-932e-62ab01f18db2",
+    "timestamp": 1748860161227,
+    "hash": "c061903e6cf47d920be64d47de3d8a8f5838cead8991a4273f726772e49427a2",
+    "lastHash": "098c77a0e0f562206304f1d22d88f0006133e7dee6ede1fa910011cee4ab9cc0",
+    "data": {
+      "id": "s002",
+      "name": "Matilda Sundqvist",
+      "course": "Smart Contracts",
+      "grade": "B+"
+    },
+    "nonce": 1,
+    "difficulty": 0
+  },
+  {
+    "id": "e2707882-16ec-4510-b08f-aa885413fa15",
+    "timestamp": 1748860190790,
+    "hash": "0e0ddbf6975d7b1dc007484691b8e2e6f410703be7f0e57e5e8257c733c3bc8d",
+    "lastHash": "c061903e6cf47d920be64d47de3d8a8f5838cead8991a4273f726772e49427a2",
     "data": {
       "id": "s004",
       "name": "Kwame Owusu",
       "course": "Decentralized Apps",
       "grade": "B"
     },
-    "nonce": 3,
+    "nonce": 16,
+    "difficulty": 1
+  },
+  {
+    "id": "774bc3fe-358c-48ce-9580-7c8b78150db2",
+    "timestamp": 1748860212476,
+    "hash": "e586a23014f269a715c2f66258d8ba5f6e589e2feb9d3a6ba8746d027b917be6",
+    "lastHash": "0e0ddbf6975d7b1dc007484691b8e2e6f410703be7f0e57e5e8257c733c3bc8d",
+    "data": {
+      "id": "s001",
+      "name": "Kwabena Mensah",
+      "course": "Blockchain Development",
+      "grade": "A"
+    },
+    "nonce": 1,
+    "difficulty": 0
+  },
+  {
+    "id": "340859c9-b7c1-4322-8e8b-d45a6e8eca26",
+    "timestamp": 1748860489172,
+    "hash": "0f9d6baca8d01e229ebb4829564a3caa25cd80f2f17a5eeeee6e729bd6dae5ee",
+    "lastHash": "e586a23014f269a715c2f66258d8ba5f6e589e2feb9d3a6ba8746d027b917be6",
+    "data": {
+      "id": "s001",
+      "name": "Kwabena Mensah",
+      "course": "Blockchain Development",
+      "grade": "A"
+    },
+    "nonce": 1,
     "difficulty": 1
   }
 ]
