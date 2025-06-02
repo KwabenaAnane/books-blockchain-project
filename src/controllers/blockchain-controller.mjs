@@ -1,5 +1,4 @@
 import AppError from '../models/appError.mjs'
-// import  blockchain  from '../models/blockchain/blockchain-instance.mjs'
 import Blockchain from '../models/blockchain/Blockchain.mjs'
 
 const blockchain = new Blockchain()

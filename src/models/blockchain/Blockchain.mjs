@@ -2,7 +2,8 @@ import fs from 'fs';
 import Block from './Block.mjs';
 import { v4 as uuidv4 } from 'uuid';
 
- export default class Blockchain {
+export default class Blockchain {
+  blockchainPath = './src/data/blockchain.json';
   constructor() {
     this.chain = this.loadBlockchain() || [Block.genesis()];
     this.difficulty = 1;
@@ -34,16 +35,13 @@ import { v4 as uuidv4 } from 'uuid';
   }
 
   saveBlockchain() {
-    fs.writeFileSync(
-      './src/data/blockchain.json',
-      JSON.stringify(this.chain, null, 2)
-    );
+    fs.writeFileSync(this.blockchainPath, JSON.stringify(this.chain, null, 2));
   }
 
   loadBlockchain() {
     try {
-      if (fs.existsSync('./src/data/blockchain.json')) {
-        const data = fs.readFileSync('./src/data/blockchain.json', 'utf-8');
+      if (fs.existsSync(this.blockchainPath)) {
+        const data = fs.readFileSync(this.blockchainPath, 'utf-8');
         const parsed = JSON.parse(data);
         return parsed.map((obj) => new Block(obj));
       }
@@ -53,4 +51,3 @@ import { v4 as uuidv4 } from 'uuid';
     }
   }
 }
-

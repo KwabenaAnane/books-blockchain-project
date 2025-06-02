@@ -10,7 +10,6 @@ const errorHandler = (err, req, res, next) => {
     message: err.message,
   });
 
-  // Write error to ./logs/error.log
   const errorLog = `${new Date().toISOString()} - ${err.status} - ${err.statusCode} - ${err.message}\n`;
   fs.appendFile('logs/error.log', errorLog, (err) => {
     if (err) {
@@ -20,9 +19,4 @@ const errorHandler = (err, req, res, next) => {
 };
 export default errorHandler;
 
-// const errorHandler = (err, req, res, next) => {
-//   const errorLog = `[${new Date().toISOString()}] ${err.message}\n`;
-//   fs.appendFileSync('error.log', errorLog);
-//   res.status(err.statusCode || 500).json({ error: err.message });
-// };
-// export default errorHandler;
+
