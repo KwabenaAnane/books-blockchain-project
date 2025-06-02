@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": 1748827609874,
+    "hash": "0422cc92942b2eea47a1a24b000416d6c225e585416e35bf724e5cf148254b35",
+    "lastHash": "a875813c7ff528ae3aeabe74220177cc2a705630172aebd57c76cf87be9a95c1",
+    "data": {
+      "id": "s005",
+      "name": "Lina Pettersson",
+      "course": "Token Economics",
+      "grade": "A+"
+    },
+    "nonce": 30,
+    "difficulty": 1
+  },
+  {
+    "timestamp": 1748827625358,
+    "hash": "77974b8c6cf3cd3842feabd845e43faf67b65283b820d82fd70963d338c0ce59",
+    "lastHash": "0422cc92942b2eea47a1a24b000416d6c225e585416e35bf724e5cf148254b35",
+    "data": {
+      "id": "s005",
+      "name": "Lina Pettersson",
+      "course": "Token Economics",
+      "grade": "A+"
+    },
+    "nonce": 1,
+    "difficulty": 0
+  },
+  {
+    "timestamp": 1748827714728,
+    "hash": "03fe67b6f4cbb033336c41db352a022430e9f5eb4ca415e157d4355faa0c6087",
+    "lastHash": "77974b8c6cf3cd3842feabd845e43faf67b65283b820d82fd70963d338c0ce59",
+    "data": {
+      "id": "s004",
+      "name": "Kwame Owusu",
+      "course": "Decentralized Apps",
+      "grade": "B"
+    },
+    "nonce": 3,
+    "difficulty": 1
+  }
+]
