@@ -1,9 +1,13 @@
 import fs from 'fs';
 
+fs.mkdir('logs', { recursive: true }, (err) => {
+  if (err) {
+    console.error(err);
+  }
+});
+
 export const logger = (req, res, next) => {
   const message = `${req.method} ${req.originalUrl} - ${new Date().toLocaleDateString('sv-SE')} ${new Date().toLocaleTimeString('sv-SE')}`;
-
-  console.log(message);
 
   // Write log to logs.txt file
   const logFile = 'logs/logs.txt';

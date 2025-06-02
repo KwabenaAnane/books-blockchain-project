@@ -1,0 +1,32 @@
+[
+  {
+    "id": "s001",
+    "name": "Kwabena Mensah",
+    "course": "Blockchain Development",
+    "grade": "A"
+  },
+  {
+    "id": "s002",
+    "name": "Matilda Sundqvist",
+    "course": "Smart Contracts",
+    "grade": "B+"
+  },
+  {
+    "id": "s003",
+    "name": "Zoher Ali",
+    "course": "Web3 Architecture",
+    "grade": "A-"
+  },
+  {
+    "id": "s004",
+    "name": "Kwame Owusu",
+    "course": "Decentralized Apps",
+    "grade": "B"
+  },
+  {
+    "id": "s005",
+    "name": "Lina Pettersson",
+    "course": "Token Economics",
+    "grade": "A+"
+  }
+]
