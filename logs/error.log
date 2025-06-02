@@ -1,0 +1,28 @@
+2025-06-01T21:46:36.694Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\booksBlockhainProject\data\blockchain.json'
+2025-06-01T21:47:19.522Z - Bad Request, information saknas - 400 - Missing data
+2025-06-01T21:47:33.642Z - Bad Request, information saknas - 400 - Missing data
+2025-06-01T21:47:35.490Z - Bad Request, information saknas - 400 - Missing data
+2025-06-01T21:47:36.183Z - Bad Request, information saknas - 400 - Missing data
+2025-06-01T21:47:36.866Z - Bad Request, information saknas - 400 - Missing data
+2025-06-01T21:48:08.852Z - Internal Server Error - 500 - blockchain.getBlockByIndex is not a function
+2025-06-01T21:53:38.724Z - Not Found, vi hittar inte resursen som du frågar efter - 404 - Block not found
+2025-06-01T21:53:44.649Z - Not Found, vi hittar inte resursen som du frågar efter - 404 - Block not found
+2025-06-02T01:12:49.678Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:16:25.568Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:16:27.500Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:16:28.982Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:16:34.694Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:16:35.589Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:16:36.344Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:17:04.280Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:17:06.960Z - Internal Server Error - 500 - ENOENT: no such file or directory, open 'D:\data\blockchain.json'
+2025-06-02T01:18:08.544Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:18:14.358Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:19:13.600Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:19:57.605Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:20:00.098Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:20:02.272Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:20:03.532Z - Internal Server Error - 500 - Cannot read properties of undefined (reading 'hash')
+2025-06-02T01:25:10.374Z - Bad Request, information saknas - 400 - Missing data
+2025-06-02T01:25:14.722Z - Bad Request, information saknas - 400 - Missing data
+2025-06-02T01:25:44.293Z - 400 - 400 - Expected property name or '}' in JSON at position 1 (line 1 column 2)
