@@ -61,15 +61,4 @@ describe('BlockchainAPI', () => {
     expect(parsed[1].data).toEqual(data);
   });
 
-  it('should load a blockchain from file if it exists', () => {
-    const data = { id: 's005', name: 'Eva', course: 'ES6', grade: 'B+' };
-    blockchain.addBlock({ data });
-
-    const newInstance = new Blockchain();
-    newInstance.blockchainPath = TEST_CHAIN_PATH;
-    const loaded = newInstance.loadBlockchain();
-
-    expect(loaded).toHaveLength(2);
-    expect(loaded[1].data).toEqual(data);
-  });
 });

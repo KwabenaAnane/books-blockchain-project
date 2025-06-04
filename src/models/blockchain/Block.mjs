@@ -3,9 +3,8 @@ import { createHash } from '../../utilities/hash.mjs';
 import { MINE_RATE } from '../../utilities/config.mjs';
 import crypto from 'crypto';
 
-
 export default class Block {
-  constructor({ id, timestamp, hash, lastHash, data, nonce, difficulty }) {
+  constructor({ timestamp, hash, lastHash, data, nonce, difficulty }) {
     this.id = crypto.randomUUID().replaceAll('-', '');
     this.timestamp = timestamp;
     this.hash = hash;
@@ -16,14 +15,18 @@ export default class Block {
   }
 
   static genesis() {
-    return new this(GENESIS_BLOCK);
+    return GENESIS_BLOCK;
   }
 
-  static mineBlock({ id, previousBlock, data }) {
+  static mineBlock({ previousBlock, data }) {
     let timestamp, hash;
     const lastHash = previousBlock.hash;
     let { difficulty } = previousBlock;
     let nonce = 0;
+
+    if (typeof data === 'object' && !Array.isArray(data)) {
+      data = { ...data, id: crypto.randomUUID().replaceAll('-', '') };
+    }
 
     do {
       nonce++;
@@ -35,13 +38,12 @@ export default class Block {
       hash = createHash(timestamp, lastHash, data, nonce, difficulty);
     } while (hash.substring(0, difficulty) !== '0'.repeat(difficulty));
 
-    return new this({ id, timestamp, hash, lastHash, data, nonce, difficulty });
+    return new this({ timestamp, hash, lastHash, data, nonce, difficulty });
   }
 
   static adjustDifficultyLevel({ block, timestamp }) {
     const { difficulty } = block;
 
-    // Skydda oss mot negativa svårighetsgrader(difficultylevels)...
     if (difficulty < 1) return 1;
 
     if (timestamp - block.timestamp > MINE_RATE) {

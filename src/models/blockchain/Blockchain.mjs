@@ -1,6 +1,5 @@
 import fs from 'fs';
 import Block from './Block.mjs';
-import crypto from 'crypto';
 
 export default class Blockchain {
   blockchainPath = './src/data/blockchain.json';
@@ -9,9 +8,7 @@ export default class Blockchain {
     this.difficulty = 1;
   }
   addBlock({ data }) {
-    const id = crypto.randomUUID().replaceAll('-', '');
     const addedBlock = Block.mineBlock({
-      id,
       previousBlock: this.chain.at(-1),
       data,
     });

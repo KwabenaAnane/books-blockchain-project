@@ -5,22 +5,22 @@ export default class AppError extends Error {
 
     switch (statusCode) {
       case 400:
-        this.status = 'Bad Request, information saknas';
+        this.status = 'Bad Request, information not found';
         break;
       case 401:
-        this.status = 'Unauthorized, du måste vara inloggad';
+        this.status = 'Unauthorized, log in first';
         break;
       case 403:
-        this.status = 'Unauthorized, du har inte behörighet';
+        this.status = 'Unauthorized';
         break;
       case 404:
-        this.status = 'Not Found, vi hittar inte resursen som du frågar efter';
+        this.status = 'Block not found';
         break;
       case statusCode.toString().startsWith('5'):
         this.status = 'Internal Server Error';
         break;
       default:
-        this.status = 'Det gick fel, vet inte vad';
+        this.status = 'Failed';
     }
 
     Error.captureStackTrace(this, this.constructor);
