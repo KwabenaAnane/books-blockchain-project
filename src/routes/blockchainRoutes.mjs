@@ -1,10 +1,14 @@
-import { addBlock,  getAllBlocks, getBlock } from '../controllers/blockchain-controller.mjs' 
-import { Router } from 'express' 
+import {
+  addBlock,
+  getAllBlocks,
+  getBlock,
+} from '../controllers/blockchain-controller.mjs';
+import { Router } from 'express';
 
-const routes = Router()
+const router = Router();
 
-routes.post('/mine', addBlock)
-routes.get('/blocks', getAllBlocks)
-routes.get('/block/:id', getBlock)
+router.post('/mine', addBlock);
+router.get('/blocks', getAllBlocks);
+router.get('/block/:id', getBlock);
 
-export default routes
+export default router;

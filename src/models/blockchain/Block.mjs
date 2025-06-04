@@ -1,10 +1,12 @@
 import { GENESIS_BLOCK } from './genesis.mjs';
 import { createHash } from '../../utilities/hash.mjs';
 import { MINE_RATE } from '../../utilities/config.mjs';
+import crypto from 'crypto';
+
 
 export default class Block {
   constructor({ id, timestamp, hash, lastHash, data, nonce, difficulty }) {
-    this.id = id;
+    this.id = crypto.randomUUID().replaceAll('-', '');
     this.timestamp = timestamp;
     this.hash = hash;
     this.lastHash = lastHash;

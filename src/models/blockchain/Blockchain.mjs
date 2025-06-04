@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Block from './Block.mjs';
+import crypto from 'crypto';
 import { v4 as uuidv4 } from 'uuid';
 
 export default class Blockchain {
@@ -9,7 +10,7 @@ export default class Blockchain {
     this.difficulty = 1;
   }
   addBlock({ data }) {
-    const id = uuidv4();
+    const id = crypto.randomUUID().replaceAll('-', '');
     const addedBlock = Block.mineBlock({
       id,
       previousBlock: this.chain[this.chain.length - 1],
