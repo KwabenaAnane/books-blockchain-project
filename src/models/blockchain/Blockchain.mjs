@@ -1,7 +1,6 @@
 import fs from 'fs';
 import Block from './Block.mjs';
 import crypto from 'crypto';
-import { v4 as uuidv4 } from 'uuid';
 
 export default class Blockchain {
   blockchainPath = './src/data/blockchain.json';
@@ -13,7 +12,7 @@ export default class Blockchain {
     const id = crypto.randomUUID().replaceAll('-', '');
     const addedBlock = Block.mineBlock({
       id,
-      previousBlock: this.chain[this.chain.length - 1],
+      previousBlock: this.chain.at(-1),
       data,
     });
 
@@ -32,7 +31,7 @@ export default class Blockchain {
     if (!this.chain || this.chain.length === 0) {
       return Block.genesis();
     }
-    return this.chain[this.chain.length - 1];
+    return this.chain.at(-1);
   }
 
   saveBlockchain() {

@@ -192,3 +192,7 @@ GET /api/blocks - 2025-06-04 10:43:13
 GET /api/block/323dd9308f024b1d8cf18038d4b1524f - 2025-06-04 10:43:32
 POST /api/mine - 2025-06-04 11:04:29
 POST /api/mine - 2025-06-04 11:04:34
+GET /api/block/323dd9308f024b1d8cf18038d4b1524f - 2025-06-04 12:43:01
+GET /api/blocks - 2025-06-04 12:43:13
+GET /api/block/984af9b3919b46aebdc49c1ce4606d3a - 2025-06-04 12:43:43
+POST /api/mine - 2025-06-04 12:44:59
