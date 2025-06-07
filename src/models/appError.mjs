@@ -20,7 +20,7 @@ export default class AppError extends Error {
         this.status = 'Internal Server Error';
         break;
       default:
-        this.status = 'Failed';
+        this.status = 'Failed to process request';
     }
 
     Error.captureStackTrace(this, this.constructor);
